@@ -155,6 +155,17 @@ function patrat(linie,coloana){
             castig ++;  
             numarDinMatrice = matrice [2][1];
         }
+        if(numarBoxFilled == 9 && castig == 0){
+            setTimeout(function() {
+                for(i=0;i<3;i++){
+                    for(j=0;j<3;j++){
+                        matrice[i][j] = 0;
+                        document.querySelector(".box" + i + j).innerHTML = "";
+                    }
+                }
+            }, 100);
+            
+        }
         if(castig == 1){
             if(numarDinMatrice == 1){
                 scorx ++;
