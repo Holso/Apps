@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;  
+}
+body{
+    width: 100%;
+    height: 3000px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+.introducere{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+    /*====== CALCULATOR =======*/
+.calculator {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff,
+    2px 2px 5px rgba(0, 0, 0, 0.288);
+}
+
+/*=== Titlu ===*/
+.titlu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlu h1{
+    color: #3a81ac;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/*=== Ecran ===*/
+.ecran{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73,
+              inset 2px 2px 5px #babecc;
+    background-color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.ecran-principal{
+    width: 93%;
+    height: 70%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 23px;
+}
+.ecran-secundar{
+    width: 93%;
+    height: 30%;
+    padding-right: 17px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 19px;
+    color: rgb(111, 111, 111);
+}
+
+/*=== Butoane ===*/
+
+.box-butoane{
+    width: 90%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-butoane .rand{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.rand .btn{
+    height: 58px;
+    width: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+}
+.btn-operator{
+    color: #3a81ac;
+}
+
+.btn:hover {
+    transition-duration: 0.1s;
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+}
+.btn:active {
+    box-shadow: 1px 1px 2px black;
+}
+.rand-ultim{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+.rand-1{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+.rand-2{
+    width: 100%;
+}
+#btn-equal{
+    width: 100%;
+}
+
+
+        /*======X SI 0======*/
+.sectionXO{
+    width: max-content;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.xsio {
+    width: 300px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e8e8e8;
+    box-shadow: -3px -3px 7px #ffffff, 2px 2px 5px rgba(0, 0, 0, 0.288);
+}
+.box{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    cursor: pointer;
+}
+.dreapta{
+    border-right: 2px solid black;
+}
+.jos{
+    border-bottom: 2px solid black;
+}
+
+.ecranCastigator{
+    width: 200px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ecranCastigator .titlu{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.ecranCastigator .boxScor{
+    width: 100px;
+    height: max-content;
+    padding: 5px 30px 5px 30px ;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.boxX{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.boxO{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.sectionXO .butoane{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.butoane button{
+    padding: 3px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    transition-duration: 0.1s;
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+}
+button:active {
+    box-shadow: 1px 1px 2px black;
+}
+
+  
