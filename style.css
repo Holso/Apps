@@ -167,6 +167,15 @@ body{
     align-items: center;
     gap: 20px;
 }
+.sectionXO .title{
+    position: relative;
+    top: 20px;
+    border-bottom: 4px solid #3a81ac;
+    color: #3a81ac;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
 
 .xsio {
     width: 300px;
@@ -178,6 +187,7 @@ body{
     overflow: hidden;
     background-color: #e8e8e8;
     box-shadow: -3px -3px 7px #ffffff, 2px 2px 5px rgba(0, 0, 0, 0.288);
+    transition: all .5s;
 }
 .box{
     padding: 15px;
